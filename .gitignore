@@ -1,0 +1,11 @@
+# Local WorkBuddy/Codex scratch data: do not commit private task runs or caches.
+.workbuddy/tmp/
+.workbuddy/logs/
+.workbuddy/cache/
+.workbuddy/private/
+.workbuddy/runs/
+.workbuddy/output/
+
+# Common local system/editor noise.
+.DS_Store
+Thumbs.db
