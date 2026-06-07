@@ -9,7 +9,7 @@
 - [ ] Important files are copied, not processed as unique originals.
 - [ ] Output folder is explicit.
 - [ ] Workspace is not desktop, downloads root, personal document root, or production repo root unless intentionally approved.
-- [ ] If `.workbuddy/` exists, it is treated as this repo's practice convention, not an official WorkBuddy required directory.
+- [ ] If a local `.workbuddy/` experiment exists, it is excluded from the public repo and labeled as a repository convention.
 
 ## File Operations
 
@@ -80,7 +80,7 @@
 
 - [WorkBuddy 权限、安全与企业治理](../08-permission-security/README.md)
 - [WorkBuddy 两个权限模式](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Permission-Modes)
-- [WorkBuddy 数据管理](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Data-Management)
+- [WorkBuddy 数据管理](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Data)
 - [WorkBuddy 连接器](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Connector)
 - [WorkBuddy 自动化](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide)
 - [Skill Evaluation Template](skill-evaluation-template.md)

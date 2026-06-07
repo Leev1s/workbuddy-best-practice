@@ -19,7 +19,7 @@
 
 模型选择是任务策略的一部分。日常文档和办公分析可以优先使用 Auto 或均衡模型；复杂推理、多模态输入、长文档整理、代码或图像任务应按实际能力选择。自定义模型适合企业已有模型采购、内网合规、本地部署或成本控制，但需要承担第三方模型的稳定性、合规性和费用风险。
 
-记忆不是项目知识库，也不是企业制度库。它更适合保存个人偏好、常用表达、固定协作习惯和近期跟进事项。需要公开、稳定、可审计的项目上下文，应放在项目文档或本仓库 `.workbuddy/` 这类人工维护的 context folder 中，而不是依赖个人记忆。
+记忆不是项目知识库，也不是企业制度库。它更适合保存个人偏好、常用表达、固定协作习惯和近期跟进事项。需要公开、稳定、可审计的项目上下文，应放在项目文档、团队知识库或 Context Package 模板中，而不是依赖个人记忆。
 
 ## How to use
 
@@ -46,7 +46,7 @@
 - 在共享电脑或公共环境保存 API Key。
 - 把记忆当成准确无误的事实库。
 - 让记忆保存不该长期存在的私人信息、客户信息或临时上下文。
-- 混淆本仓库 `.workbuddy/memory/PROJECT_MEMORY.md` 与 WorkBuddy 官方 Memory；前者只是本仓库人工维护的项目约定。
+- 混淆普通 Markdown 维护记录与 WorkBuddy 官方 Memory；前者只是人工维护的项目约定。
 
 ## Security / permission notes
 
@@ -57,7 +57,7 @@
 ## Template or checklist
 
 ```markdown
-# Model and Memory Decision
+## Model and Memory Decision
 
 - 任务：
 - 模型：Auto / 内置模型 / 自定义模型 / 本地模型
@@ -75,6 +75,6 @@
 
 - [WorkBuddy 官方文档：模型配置](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Model)
 - [WorkBuddy 官方文档：记忆](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Memory)
-- [WorkBuddy 官方文档：数据管理](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Data-Management)
-- [`.workbuddy` 项目级上下文目录指南](../01-getting-started/project-context-directory.md)
+- [WorkBuddy 官方文档：数据管理](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Data)
+- [WorkBuddy Context Convention](../docs/workbuddy-context-convention.md)
 - [sources.md](../sources.md)

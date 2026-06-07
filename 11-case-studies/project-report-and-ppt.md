@@ -4,6 +4,13 @@
 
 项目负责人需要把项目总结材料、会议纪要、数据表和下一步计划整理成正式汇报文档或 PPT。官方实践案例提到 WorkBuddy 可生成 Word 文档、修改已有内容，也可根据素材和模板制作 PPT，并建议说明读者、页数、结构和风格偏好。
 
+## 企业价值与前置条件
+
+- 企业价值：提升汇报材料结构一致性，减少重复排版和素材整理成本。
+- 适用：内部项目进展、复盘、资源申请和业务评审草稿。
+- 不适用：未经负责人确认的财务预测、客户承诺、法务文件或正式公告。
+- 前置条件：项目材料副本、模板或品牌规则、页数限制、PPTX 是否需要实际生成、最终审批人。
+
 ## 任务目标
 
 - 把零散素材整理为一份结构完整的项目汇报。
@@ -30,7 +37,7 @@
 ## 可复制 task brief
 
 ```markdown
-请根据当前工作空间中的项目材料，生成一份项目汇报文档和 PPT 大纲。
+请根据当前工作空间中的项目材料，生成一份项目汇报文档和 PPT 大纲。先不要覆盖已有正式文档。
 
 项目背景：
 - 项目名称：{项目名称}
@@ -47,8 +54,13 @@
 输出：
 1. `project-report.md`：包含背景、目标、进展、成果数据、问题风险、下一步计划。
 2. `ppt-outline.md`：10 页以内，每页包含标题、核心观点、建议图表或素材。
-3. `speaker-notes.md`：每页 3-5 条讲稿提示。
-4. `missing-info.md`：列出缺失数据和待确认表述。
+3. `ppt-acceptance.md`：逐页验收项，包含数据来源、图表口径、待确认素材。
+4. `speaker-notes.md`：每页 3-5 条讲稿提示。
+5. `missing-info.md`：列出缺失数据和待确认表述。
+
+PPTX 阶段：
+- 如果当前环境支持 PPT 生成，请在我确认 `ppt-outline.md` 后再生成 `project-report.pptx`。
+- 如果需要 Office / PPT Skill，请先列出 Skill 来源、权限和输出路径，等待我确认。
 
 写作要求：
 - 面向汇报对象，语气专业克制。
@@ -77,12 +89,11 @@
 - 管理层汇报中的数据、预算、排期和风险等级必须由负责人复核。
 - 如果使用模板或品牌素材，要确认版权和企业内部使用权限。
 - 不要让 WorkBuddy 直接覆盖已有正式文档；先输出新版本或草稿。
+- 使用办公文档 Skill、第三方导出或格式化服务前，先检查来源、权限、数据外发和撤销方式。
 - 涉及客户、合同、财务、人事内容时，避免把敏感信息放入公开模板。
 
 ## Further Reading
 
 - [WorkBuddy 创建任务](https://www.codebuddy.cn/docs/workbuddy/Create-Task)
 - [WorkBuddy 结果查看](https://www.codebuddy.cn/docs/workbuddy/Results)
-- [WorkBuddy 实践二：文档生成与编辑](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Practice-Three)
-- [WorkBuddy 实践三：数据分析并可视化](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Practice-Four)
-
+- [WorkBuddy 技能](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)

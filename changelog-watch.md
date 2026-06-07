@@ -180,7 +180,7 @@ Use this template when an official update changes recommended usage or risk post
 - Update:
   - `08-permission-security/`
   - `templates/security-checklist.md`
-  - `.workbuddy/REVIEW_CHECKLIST.md`
+  - `templates/workbuddy-context/repository-review-checklist.md`
 
 ### Skills / Connectors / MCP
 
@@ -204,7 +204,7 @@ Use this template when an official update changes recommended usage or risk post
 - Watch for memory extraction frequency, visibility, edit/delete controls, import behavior, context compression, history replay, and long-session recovery.
 - Update:
   - `09-model-memory/`
-  - `.workbuddy/memory/README.md`
+  - `docs/workbuddy-context-convention.md`
   - prompt and review templates
 
 ### Model Configuration

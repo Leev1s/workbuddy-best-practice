@@ -62,7 +62,7 @@ Task Brief 的价值在于把“你觉得它应该懂”的信息显式写出来
 - 对“事实来源”使用白名单，不让 Agent 自由混入未核验资料。
 - 把“不要做什么”写进限制区，例如不要删除、不要覆盖、不要外发。
 - 对长任务先要求计划和文件清单，再允许执行。
-- 把成功的 Task Brief 移入 `templates/` 或 `.workbuddy/prompts/`。
+- 把成功的 Task Brief 移入 `templates/`、`templates/workbuddy-context/` 或团队私有知识库。
 
 ## Common mistakes
 
@@ -81,3 +81,4 @@ Task Brief 的价值在于把“你觉得它应该懂”的信息显式写出来
 - [WorkBuddy Results](https://www.codebuddy.cn/docs/workbuddy/Results)
 - [WorkBuddy Permission Modes](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Permission-Modes)
 - [Task Brief Template](../templates/task-brief-template.md)
+- [WorkBuddy Context Convention](../docs/workbuddy-context-convention.md)

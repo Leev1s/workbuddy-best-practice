@@ -90,11 +90,11 @@ Idea → Task Brief → Context Package → Manual Run → Result Review → Wor
 ## Template
 
 ```markdown
-# Workflow Maturity Record
+## Workflow Maturity Record
 
 - Idea:
 - Task Brief link:
-- Context Package / `.workbuddy` path:
+- Context Package path:
 - Manual Run records:
 - Review findings:
 - Stable prompt:
@@ -103,9 +103,9 @@ Idea → Task Brief → Context Package → Manual Run → Result Review → Wor
 - Security approval:
 ```
 
-## `.workbuddy/` boundary
+## Context Package Boundary
 
-`.workbuddy/` 可以帮助团队把 Context Package 文件化，但它只是本仓库的组织约定。WorkBuddy 官方 Memory 是产品从会话历史中提取并复用背景信息的能力，不等同于 `.workbuddy/memory/PROJECT_MEMORY.md`。
+Context Package 可以用普通文档、模板或团队知识库文件化。本仓库不默认创建 `.workbuddy/`；如果团队在私有项目中使用它，也只能标为本地实验或 repository convention。WorkBuddy 官方 Memory 是产品从会话历史中提取并复用背景信息的能力，不等同于普通 Markdown 维护记录。
 
 ## Further Reading
 
@@ -114,3 +114,4 @@ Idea → Task Brief → Context Package → Manual Run → Result Review → Wor
 - [WorkBuddy 自动化](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide)
 - [WorkBuddy 企业智能体](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/CloudAgent)
 - [WorkBuddy 任务 Prompt 模板](../01-getting-started/task-prompt-template.md)
+- [WorkBuddy Context Convention](../docs/workbuddy-context-convention.md)

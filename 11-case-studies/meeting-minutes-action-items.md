@@ -4,6 +4,13 @@
 
 会议结束后，团队手里有录音转写、聊天记录、零散笔记或腾讯会议相关材料，需要整理成正式纪要，并沉淀行动项。官方实践案例提到会议纪要整理，以及通过腾讯会议 Skill 进行会议预约、查询、录制、转写和 AI 纪要整理等操作。
 
+## 企业价值与前置条件
+
+- 企业价值：减少会后整理时间，降低行动项遗漏，让责任人、截止时间和待确认事项可追踪。
+- 适用：转写稿、聊天记录、会议笔记已准备好的内部会议。
+- 不适用：需要法律确认、客户承诺、重大人事或财务决议的最终纪要直接外发。
+- 前置条件：会议材料副本、读者范围、保密级别、外发审批人；如使用会议相关 Skill / Connector，需先确认授权范围。
+
 ## 任务目标
 
 - 把原始记录整理为结构化会议纪要。
@@ -44,13 +51,16 @@
 - 相关背景资料：{文件名，可选}
 
 输出：
-1. `meeting-minutes.md`
+1. `meeting-minutes-internal.md`
    - 会议背景
    - 讨论议题
    - 关键结论
    - 行动项
    - 待确认问题
-2. `action-items.csv`
+2. `meeting-minutes-participant.md`
+   - 面向参会人的简洁版本
+   - 不包含内部争议和敏感复盘
+3. `action-items.csv`
    - 事项
    - 负责人
    - 截止时间
@@ -90,7 +100,4 @@
 
 - [WorkBuddy 任务对话](https://www.codebuddy.cn/docs/workbuddy/Task-Chat)
 - [WorkBuddy 结果查看](https://www.codebuddy.cn/docs/workbuddy/Results)
-- [WorkBuddy 实践一：文件内容识别与处理](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Practice-Two)
-- [WorkBuddy 实践十：一句话，管理你的所有会议](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Practice-Eleven)
 - [WorkBuddy 连接器](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Connector)
-

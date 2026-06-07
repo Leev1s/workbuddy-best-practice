@@ -58,7 +58,7 @@
 ## Template or checklist
 
 ```markdown
-# Expert Task Brief
+## Expert Task Brief
 
 - 任务目标：
 - 推荐专家 / 专家团：

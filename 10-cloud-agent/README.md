@@ -67,7 +67,7 @@ Cloud Agent 的风险边界包括：
 ## Template or checklist
 
 ```markdown
-# Cloud Agent Release Checklist
+## Cloud Agent Release Checklist
 
 - Agent 名称：
 - Owner：

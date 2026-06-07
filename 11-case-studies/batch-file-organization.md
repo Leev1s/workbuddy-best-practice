@@ -4,6 +4,13 @@
 
 团队把合同、票据、截图、会议材料、客户资料临时放进同一个文件夹，文件名混乱，后续检索困难。官方实践案例提到可让 WorkBuddy 根据文件内容或属性，按统一规则批量重命名，并建议先展示重命名预览结果。
 
+## 企业价值与前置条件
+
+- 企业价值：降低误命名、误归档和交接成本，让文件整理过程可审计。
+- 适用：低风险文件副本、规则明确的批量命名、需要人工确认后再移动的归档。
+- 不适用：合同原件、审计原件、客户隐私或缺少备份的唯一副本。
+- 前置条件：独立工作空间、文件副本、命名规则、冲突命名处理规则、人工确认人。
+
 ## 任务目标
 
 - 识别指定工作空间中的文件内容、类型或可用属性。
@@ -45,12 +52,13 @@
 输出：
 1. `rename-preview.md`：包含原文件名、建议新文件名、判断依据、风险备注。
 2. `needs-review.md`：列出不建议自动重命名的文件和原因。
+3. `archive-plan.md`：建议归档目录、冲突处理和需要人工确认的移动操作。
 
 执行限制：
 - 不删除任何文件。
 - 不覆盖同名文件。
 - 不修改工作空间外文件。
-- 等我确认预览表后，再继续执行重命名。
+- 等我确认预览表和归档方案后，再继续执行重命名或移动。
 ```
 
 ## 可能用到的 WorkBuddy 能力
@@ -68,6 +76,7 @@
 - 未识别、冲突、敏感或不确定文件进入 `needs-review.md`。
 - 未出现删除文件、覆盖原件或写入工作空间外路径。
 - 人工确认后执行的文件名与预览表一致。
+- 归档移动只发生在确认过的工作空间子目录内。
 
 ## 风险提醒
 
@@ -80,6 +89,4 @@
 
 - [WorkBuddy 创建任务](https://www.codebuddy.cn/docs/workbuddy/Create-Task)
 - [WorkBuddy 结果查看](https://www.codebuddy.cn/docs/workbuddy/Results)
-- [WorkBuddy 实践一：文件内容识别与处理](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Practice-Two)
 - [WorkBuddy 两个权限模式](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Permission-Modes)
-

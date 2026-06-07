@@ -33,9 +33,10 @@ Separate official facts, practical interpretation, and risk reminders when possi
 
 ## File Structure Policy
 
-- `.workbuddy/` is this repo's project-level context folder for WorkBuddy-oriented workflows; it is a repo convention, not an official WorkBuddy required directory.
-- Do not claim WorkBuddy automatically reads `.workbuddy/AI_AGENT_INSTRUCTIONS.md` or `.workbuddy/memory/PROJECT_MEMORY.md` unless official docs explicitly say so.
-- Do not equate `.workbuddy/memory/PROJECT_MEMORY.md` with WorkBuddy official Memory.
+- Do not create `.workbuddy/` in the public repo by default. If a team uses `.workbuddy/` locally, label it experimental / repository convention, not a WorkBuddy official standard.
+- Use `docs/workbuddy-context-convention.md` and `templates/workbuddy-context/` for public context-package guidance and reusable templates.
+- Do not claim WorkBuddy automatically reads `.workbuddy/AI_AGENT_INSTRUCTIONS.md` or any other local Markdown file unless official docs explicitly say so.
+- Do not equate repository Markdown memory files with WorkBuddy official Memory.
 - Prefer small, focused Markdown files under thematic directories.
 - Do not create many empty placeholder files.
 - Add navigation links when adding new articles.
@@ -63,7 +64,7 @@ Before finishing a change:
 - If official docs do not state a capability, write it as practice advice, hypothesis, or leave it out.
 - Do not map Claude Code mechanisms to WorkBuddy as official equivalents.
 - Do not assume third-party Skills, MCP servers, Connectors, APIs, or scripts are safe.
-- Do not store temporary memories, run logs, caches, task artifacts, private context, or sensitive data under committed `.workbuddy/` paths.
+- Do not store temporary memories, run logs, caches, task artifacts, private context, or sensitive data in committed paths.
 
 ## Maintenance Workflow
 

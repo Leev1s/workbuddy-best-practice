@@ -1,10 +1,14 @@
-# Local WorkBuddy/Codex scratch data: do not commit private task runs or caches.
-.workbuddy/tmp/
-.workbuddy/logs/
-.workbuddy/cache/
-.workbuddy/private/
-.workbuddy/runs/
-.workbuddy/output/
+# Local WorkBuddy context experiments. Do not commit private task runs,
+# local memory, caches, attachments, artifacts, or sensitive context.
+.workbuddy/
+
+# Common local secrets and model/API configuration.
+.env
+.env.*
+workbuddy/models.json
+models.json
+*.pem
+*.key
 
 # Common local system/editor noise.
 .DS_Store

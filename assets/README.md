@@ -24,7 +24,7 @@
 | README hero v2 | [`images/readme-hero-v2.webp`](images/readme-hero-v2.webp) / [`images/readme-hero-v2.png`](images/readme-hero-v2.png) | README 顶部插图；参考官方文档/产品页面的白底、紫色产品图标和青绿色高光语言 |
 | Project logo | [`images/workbuddy-best-practice-logo.webp`](images/workbuddy-best-practice-logo.webp) / [`images/workbuddy-best-practice-logo.png`](images/workbuddy-best-practice-logo.png) | README 标识、社交预览、培训封面局部元素 |
 | README hero | [`images/readme-hero.webp`](images/readme-hero.webp) / [`images/readme-hero.png`](images/readme-hero.png) | README 顶部插图、项目介绍幻灯片 |
-| Context package illustration | [`images/workbuddy-context-package.webp`](images/workbuddy-context-package.webp) / [`images/workbuddy-context-package.png`](images/workbuddy-context-package.png) | 解释 `.workbuddy/` 项目级上下文目录 |
+| Context package illustration | [`images/workbuddy-context-package.webp`](images/workbuddy-context-package.webp) / [`images/workbuddy-context-package.png`](images/workbuddy-context-package.png) | 解释 Context Package 方法论和非官方目录边界 |
 
 ## Generation notes
 
@@ -44,5 +44,5 @@
 ## Further Reading
 
 - [README](../README.md)
-- [.workbuddy output rules](../.workbuddy/output-rules/markdown-and-assets.md)
+- [Markdown and asset rules](../templates/workbuddy-context/markdown-asset-rules.md)
 - [WorkBuddy 官方简介](https://www.codebuddy.cn/docs/workbuddy/Overview)

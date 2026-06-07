@@ -39,7 +39,7 @@ WorkBuddy 任务 prompt 应该像任务简报，而不是聊天问题。坏 prom
 - 背景资料：
 - 参考样例：
 - 必须使用 / 不得使用的数据来源：
-- 项目级上下文目录（可选）：例如 `.workbuddy/`；请说明要读取哪些文件。该目录是本仓库实践约定，不是 WorkBuddy 官方自动读取机制。
+- 项目级上下文文档（可选）：例如 `docs/`、`templates/workbuddy-context/` 或团队私有知识库；请说明要读取哪些文件。
 
 ## 输出格式
 
@@ -59,7 +59,7 @@ WorkBuddy 任务 prompt 应该像任务简报，而不是聊天问题。坏 prom
 
 允许：
 - [允许读取哪些目录]
-- [`.workbuddy/` 是否只读；默认建议只读，除非任务明确要求修改项目级上下文]
+- [项目级上下文文档是否只读；默认建议只读，除非任务明确要求修改]
 - [允许新建哪些文件]
 
 禁止：
@@ -158,3 +158,4 @@ WorkBuddy 任务 prompt 应该像任务简报，而不是聊天问题。坏 prom
 - [WorkBuddy 结果查看](https://www.codebuddy.cn/docs/workbuddy/Results)
 - [WorkBuddy 权限模式](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Permission-Modes)
 - [WorkBuddy Result Review Checklist](../templates/review-checklist.md)
+- [WorkBuddy Context Convention](../docs/workbuddy-context-convention.md)

@@ -39,6 +39,17 @@
 - Must not do:
 - Escalation conditions:
 
+## Tool / Permission Boundary
+
+- Required Skills:
+- Required Connectors:
+- MCP / CLI / script dependencies:
+- Allowed file read paths:
+- Allowed file write paths:
+- External service calls allowed: yes / no / with approval
+- Permission mode baseline:
+- Human approval required before:
+
 ## Recommended Prompt
 
 ```markdown
@@ -55,6 +66,11 @@
 
 限制与风险：
 - 
+
+工具与权限：
+- 允许使用：
+- 禁止使用：
+- 需要先征得确认：
 ```
 
 ## Quality Bar
@@ -62,6 +78,7 @@
 - [ ] Result matches the defined expert scope.
 - [ ] Output can be reviewed by the intended user.
 - [ ] Assumptions and missing inputs are stated.
+- [ ] Skill / Connector / MCP / script and file read-write boundaries are stated.
 - [ ] Sensitive operations require approval.
 - [ ] The expert does not claim unsupported authority.
 

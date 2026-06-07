@@ -10,7 +10,7 @@ This file records long-term reference sources for `workbuddy-best-practice`. It 
 - 不复制官方文档大段原文；正文应以自己的话总结，并链接到来源。
 - 如果官方文档没有明确说明某项能力，应写成实践建议、类比或假设，或者不写。
 - 不把 Claude Code 的 agents、skills、commands、MCP 使用方式写成 WorkBuddy 官方机制。
-- `.workbuddy/` 是本仓库实践约定，不是 WorkBuddy 官方强制目录。
+- 公开 repo 不默认创建 `.workbuddy/`；如团队本地使用，应标为 experimental / repository convention。
 
 ## Official WorkBuddy Docs
 
@@ -217,8 +217,8 @@ This file records long-term reference sources for `workbuddy-best-practice`. It 
   - Full Access 会关闭上述二次确认；官方建议仅在可信、隔离、可恢复的环境中短时间使用。
 - Use for:
   - `08-permission-security/`
-  - `.workbuddy/REVIEW_CHECKLIST.md`
   - `templates/security-checklist.md`
+  - `templates/workbuddy-context/repository-review-checklist.md`
   - any article involving file operations or scripts
 - Boundaries:
   - 默认权限不是备份机制；Full Access 不应作为日常默认模式。
@@ -234,10 +234,10 @@ This file records long-term reference sources for `workbuddy-best-practice`. It 
   - 官方提醒记忆可能存在概括偏差或时效性问题；依赖记忆做重要判断前应核验。
 - Use for:
   - `09-model-memory/`
-  - `.workbuddy/memory/README.md`
+  - `docs/workbuddy-context-convention.md`
   - privacy and governance checklists
 - Boundaries:
-  - 不要把 `.workbuddy/memory/PROJECT_MEMORY.md` 写成 WorkBuddy 官方 Memory；它只是本仓库人工维护的项目约定文件。
+  - 不要把普通 Markdown 维护记录写成 WorkBuddy 官方 Memory。
 
 ### 模型配置 Model
 
@@ -257,18 +257,22 @@ This file records long-term reference sources for `workbuddy-best-practice`. It 
 
 ### 数据管理
 
-- URL: <https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Data-Management>
+- URL: <https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Data>
 - Type: official
 - Core facts:
-  - Use as primary official source for data lifecycle, archived task review, cleanup and governance once page content is rechecked.
+  - 数据管理入口位于头像 - 设置 - 数据管理。
+  - 页面用于管理已分享的文件和已归档的任务。
+  - 我分享的文件列表支持复制分享链接、下载文件和取消文件分享。
+  - 取消分享后文件从分享列表移除，他人无法再通过原链接访问。
+  - 已归档任务列表支持删除任务或取消归档。
 - Use for:
   - `08-permission-security/`
   - data retention notes
-  - `.workbuddy/REVIEW_CHECKLIST.md`
+  - `templates/security-checklist.md`
 - Research note:
-  - 2026-06-06 抓取该页面时网页工具返回 internal error；搜索结果和任务管理页面确认它存在于官方导航。正文写作前应重新打开并抽取具体事实。
+  - 2026-06-07 重新打开官方页面后确认实际 URL 为 `/Function-Description/Data`。
 - Boundaries:
-  - 在未重新核实页面内容前，不要写具体的数据删除、保留周期或企业合规承诺。
+  - 取消分享不应扩写为删除下游副本、日志、导出文件或接收人已下载文件；不要写具体保留周期或合规承诺。
 
 ### Cloud Agent / 企业智能体
 
@@ -398,7 +402,7 @@ Use this map when adding or updating README files in each chapter.
   - 技能: <https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market>
   - 连接器: <https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Connector>
   - 自动化: <https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide>
-  - 数据管理: <https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Data-Management>
+  - 数据管理: <https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Data>
 - Supporting:
   - 记忆: <https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Memory>
   - 模型配置: <https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Model>
@@ -410,7 +414,7 @@ Use this map when adding or updating README files in each chapter.
   - 记忆: <https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Memory>
   - 模型配置: <https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Model>
 - Supporting:
-  - 数据管理: <https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Data-Management>
+  - 数据管理: <https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Data>
   - Changelog: <https://www.codebuddy.cn/docs/workbuddy/Changelog>
 
 ### `10-cloud-agent/`
@@ -444,15 +448,16 @@ Use this map when adding or updating README files in each chapter.
   - 连接器: <https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Connector>
   - 自动化: <https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide>
 
-### `.workbuddy/`
+### `docs/` and `templates/workbuddy-context/`
 
 - Primary:
   - 创建任务: <https://www.codebuddy.cn/docs/workbuddy/Create-Task>
   - 权限模式: <https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Permission-Modes>
   - 记忆: <https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Memory>
 - Notes:
-  - Must always state this directory is a repo convention for WorkBuddy-oriented workflows, not an official WorkBuddy required directory.
-  - Must not equate `.workbuddy/memory/PROJECT_MEMORY.md` with official Memory.
+  - Must state Context Package guidance is a repository practice, not an official WorkBuddy directory standard.
+  - Public reusable context belongs in `docs/` and `templates/workbuddy-context/`; local `.workbuddy/` experiments should stay ignored.
+  - Must not equate Markdown maintenance notes with official Memory.
 
 ## Reference Methodology Sources
 

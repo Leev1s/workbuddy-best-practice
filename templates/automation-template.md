@@ -1,6 +1,25 @@
 # Automation Design Template / Automation 设计模板
 
-仅在工作流已人工运行并通过验收后使用本模板。它用于把稳定任务整理成可定时、可触发、可回滚的 Automation 设计。涉及删除、覆盖、外部分享或无人值守执行时，应先完成安全审批。
+仅在工作流已人工运行并通过验收后使用本模板。它用于把稳定任务整理成可定时、可回滚的 Automation 设计。涉及删除、覆盖、外部分享或无人值守执行时，应先完成安全审批。
+
+## Quick Go / No-Go
+
+- Go: 周期性、重复性、输入稳定、输出可验收、失败可停止、结果不自动外发高风险对象。
+- No-Go: 规则不清、数据敏感且未审批、需要实时人工判断、涉及资金 / 法务承诺 / 删除覆盖、失败会持续误发。
+- Needs review: 需要 Skill / Connector、自定义模型 API、Full Access、第三方系统写入或对外发送。
+
+## Minimal Automation Prompt
+
+```markdown
+请按以下规则执行定时任务：
+
+目标：
+输入范围：
+输出文件：
+禁止操作：
+失败停止条件：
+完成后请列出产物、来源、异常和需要人工复核的事项。
+```
 
 ## Task Name
 
@@ -17,7 +36,8 @@
 
 ## Trigger / Schedule
 
-- Trigger type: schedule / event / manual approval / other
+- Schedule type: fixed time / recurring interval / current product UI option
+- Non-scheduled trigger: not assumed; verify against current WorkBuddy UI and official docs before writing as a capability
 - Frequency:
 - Time zone:
 - Holiday / exception rules:
@@ -65,6 +85,7 @@
 - Safe stop condition:
 - Quick disable path:
 - Evidence / logs to keep:
+- First-week monitoring: after each scheduled run, verify trigger history, output directory, failure logs, and whether any external notification was sent.
 
 ## Human Review Required?
 

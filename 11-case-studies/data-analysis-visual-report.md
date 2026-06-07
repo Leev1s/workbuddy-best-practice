@@ -4,6 +4,13 @@
 
 运营、销售、财务或项目团队需要把 Excel / CSV 数据整理成图表和结论，用于周会、复盘或管理层汇报。官方实践案例提到可上传 Excel、CSV 等数据文件，说明指标、图表类型、统计维度和时间范围，生成图表和结论说明。
 
+## 企业价值与前置条件
+
+- 企业价值：缩短数据复盘时间，同时保留口径、字段和异常说明，方便复核。
+- 适用：字段清楚、口径可确认、可在工作空间内处理的数据副本。
+- 不适用：含敏感个人信息且未脱敏、口径未定义、需要实时生产系统写回的数据。
+- 前置条件：数据 schema、指标公式、时间范围、脱敏要求、是否允许脚本 / 自定义模型 API。
+
 ## 任务目标
 
 - 读取指定数据文件并完成基础数据检查。
@@ -37,8 +44,9 @@
 
 输入数据：
 - 数据文件：{文件名}
+- 数据 schema：{字段名、类型、含义}
 - 时间范围：{时间范围}
-- 关键指标：{指标列表}
+- 关键指标：{指标列表和公式}
 - 分组维度：{月份/产品线/区域/渠道}
 
 第一步：
@@ -48,10 +56,11 @@
 输出：
 1. `analysis-report.md`：包含数据概览、主要发现、图表说明、业务建议、限制说明。
 2. `metrics-table.csv`：关键指标汇总表。
-3. 图表文件：按月份、产品线或指定维度输出。
+3. 图表文件：命名为 `chart-{指标}-{维度}.png` 或 `chart-{指标}-{维度}.html`。
 
 约束：
 - 不修改原始数据文件。
+- 不写入工作空间外路径。
 - 不夸大因果关系，只能基于数据描述趋势和相关观察。
 - 对缺失值、异常值和样本量不足的问题必须单独说明。
 ```
@@ -77,12 +86,12 @@
 - WorkBuddy 可辅助分析和可视化，但业务口径、数据质量和最终决策仍需人工负责。
 - 自动生成图表可能选择不合适的聚合方式，关键指标要人工复算。
 - 涉及个人信息、客户数据或财务数据时，先脱敏并控制工作空间访问范围。
+- 如需生成分析脚本、宏或调用自定义模型 API，先说明数据流向、脚本作用和输出路径，等待人工确认。
 - 不要把相关性写成因果关系，不要根据样本不足的数据给出强结论。
 
 ## Further Reading
 
 - [WorkBuddy 创建任务](https://www.codebuddy.cn/docs/workbuddy/Create-Task)
 - [WorkBuddy 结果查看](https://www.codebuddy.cn/docs/workbuddy/Results)
-- [WorkBuddy 实践三：数据分析并可视化](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Practice-Four)
 - [WorkBuddy 两个权限模式](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Permission-Modes)
-
+- [WorkBuddy 模型配置](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Model)

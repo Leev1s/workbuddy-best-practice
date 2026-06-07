@@ -24,11 +24,11 @@ WorkBuddy 是腾讯推出的全场景职场 AI 智能体桌面工作台，面向
 
 1. 先把模糊需求写成 Task Brief：目标、输入、输出、约束、验收标准。
 2. 建立独立工作空间，只放本次任务需要处理的文件副本。
-3. 如果任务会长期复用，可在项目中维护 `.workbuddy/` 存放背景、规则、术语表、prompt、workflow 和验收清单，并在 prompt 中显式引用；这只是本仓库实践约定，不是 WorkBuddy 官方规范。
-3. 发起任务并要求 WorkBuddy 先复述理解、列计划。
-4. 对涉及文件修改、脚本、外部服务的步骤保持确认。
-5. 在交付前检查产物、全部文件、变更和预览。
-6. 将成功流程沉淀为模板或 Automation 候选。
+3. 如果任务会长期复用，可用普通文档或模板维护 Context Package，并在 prompt 中显式引用。
+4. 发起任务并要求 WorkBuddy 先复述理解、列计划。
+5. 对涉及文件修改、脚本、外部服务的步骤保持确认。
+6. 在交付前检查产物、全部文件、变更和预览。
+7. 将成功流程沉淀为模板或 Automation 候选。
 
 ## Best practices
 
@@ -75,3 +75,4 @@ WorkBuddy 是腾讯推出的全场景职场 AI 智能体桌面工作台，面向
 - [WorkBuddy 权限模式](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Permission-Modes)
 - [WorkBuddy vs Chatbot](workbuddy-vs-chatbot.md)
 - [办公 Agent 工程化心智模型](mental-model.md)
+- [WorkBuddy Context Convention](../docs/workbuddy-context-convention.md)

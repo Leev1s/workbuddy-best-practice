@@ -25,12 +25,13 @@ Research → Plan → Execute → Review → Ship
 
 | Claude Code 侧重 | WorkBuddy 场景类比 | 必须注意 |
 | --- | --- | --- |
-| Commands | task templates / automation / 固定 prompt / 企业场景 SOP | WorkBuddy 没有完全等价的 `.claude/commands` 文件系统概念。 |
+| Commands | task templates / 固定 prompt / 企业场景 SOP；周期性任务才可能进入 Automation | WorkBuddy 没有完全等价的 `.claude/commands` 文件系统概念。 |
 | Subagents / Agents | experts / expert teams | WorkBuddy 专家更偏产品化角色和方法论封装，不等于开发者完全文件化管理的 agent。 |
 | Skills | WorkBuddy Skills | WorkBuddy Skill 更偏办公自动化、脚本和工作流封装，可涉及文件、API 或第三方服务。 |
-| MCP | Connectors，尤其 MCP + CLI 形态 | 这是连接外部系统的方法论类比；WorkBuddy 还可能有 Skill + CLI 形态。 |
-| CLAUDE.md / memory | Memory / 任务历史 / 专家配置 / 任务模板 | WorkBuddy Memory 是产品化记忆，不是完全等价的项目内 Markdown 记忆文件。 |
-| hooks / permissions / sandbox | 默认权限、完全访问权限、工作空间、安全确认、沙箱策略 | 权限行为必须以 WorkBuddy 官方文档和产品界面为准。 |
+| MCP | Connector 或 Cloud Agent 中的外部工具接入形态之一 | Connector 也可能是 Skill + CLI；不要把 MCP 与 Connector 直接画等号。 |
+| CLAUDE.md / memory | 官方 Memory、任务历史、Expert 配置、Context Package 分别治理 | WorkBuddy Memory 是产品化记忆，不是项目内 Markdown 记忆文件。 |
+| hooks | review gate / checklist / 人工确认点 | WorkBuddy 没有 Claude Code hooks 等价机制。 |
+| permissions / sandbox | 默认权限、Full Access、工作空间、安全确认、沙箱策略 | 权限行为必须以 WorkBuddy 官方文档和产品界面为准。 |
 | Review / Ship | 结果区的产物、全部文件、变更、预览 + 用户验收 checklist | 交付前必须验收，不因 Agent 已执行而默认正确。 |
 
 ## How to use this mapping
@@ -55,9 +56,9 @@ Research → Plan → Execute → Review → Ship
 - 把 MCP 连接器、Skill、CLI 工具混为一谈，不做边界说明。
 - 只迁移术语，不迁移验收、权限和复盘纪律。
 
-## `.workbuddy/` boundary
+## Context Package Boundary
 
-本仓库可以使用 `.workbuddy/` 保存项目级上下文、prompt、workflow、review checklist 和人工维护的项目记忆，但这只是本仓库实践约定，不是 WorkBuddy 官方功能等价关系。不要声称 WorkBuddy 会自动读取 `.workbuddy/AI_AGENT_INSTRUCTIONS.md` 或 `.workbuddy/memory/PROJECT_MEMORY.md`，除非官方文档明确说明。
+本仓库用 `docs/` 和 `templates/workbuddy-context/` 保存公开 Context Package 说明、prompt、workflow 和 review checklist。团队可以在私有项目中使用 `.workbuddy/` 做本地实验，但这不是 WorkBuddy 官方功能等价关系，也不能写成自动读取机制。
 
 ## Security / permission notes
 
@@ -66,7 +67,7 @@ Claude Code 和 WorkBuddy 都可能触及文件、命令、外部系统和自动
 ## Template
 
 ```markdown
-# Workflow Asset Card
+## Workflow Asset Card
 
 - 名称：
 - 来源：一次性任务 / 团队 SOP / Claude Code 方法论迁移
@@ -86,3 +87,4 @@ Claude Code 和 WorkBuddy 都可能触及文件、命令、外部系统和自动
 - [WorkBuddy 技能](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)
 - [WorkBuddy 连接器](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Connector)
 - [WorkBuddy 权限模式](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Permission-Modes)
+- [WorkBuddy Context Convention](../docs/workbuddy-context-convention.md)

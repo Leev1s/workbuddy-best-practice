@@ -25,7 +25,7 @@
 ## How to use
 
 1. 为每个任务建立独立工作空间。
-2. 如果工作空间包含 `.workbuddy/`，默认只读取其中稳定上下文；如需修改，先列出变更计划和回滚方式。
+2. 如果工作空间包含项目级上下文文档，默认只读取稳定内容；如需修改，先列出变更计划和回滚方式。
 3. 把需要处理的文件副本放入工作空间。
 4. 默认使用默认权限。
 5. 涉及删除、覆盖、批量重命名、脚本、命令、外部程序或敏感能力时，要求先解释和列清单。
@@ -49,7 +49,7 @@
 - 批量删除前先生成清单，不直接删除。
 - 脚本先解释、再小样本测试、最后执行。
 - Full Access 用完即关。
-- Full Access 下尤其要防止 Agent 误改 `.workbuddy/` 中的项目规则、权限记录、项目记忆或安全清单。
+- Full Access 下尤其要防止 Agent 误改项目规则、权限记录、维护记录或安全清单。
 - 对第三方 Skill / Connector 先做安全评估。
 - 企业场景不建议直接 Full Access；如必须使用，应在隔离目录、虚拟机、Docker 或临时测试环境中进行。
 
@@ -79,7 +79,7 @@ Full Access 不等于更安全，也不代表 WorkBuddy 自动替用户承担风
 ## Template
 
 ```markdown
-# Permission Decision Record
+## Permission Decision Record
 
 - Task:
 - Workspace:
@@ -97,7 +97,7 @@ Full Access 不等于更安全，也不代表 WorkBuddy 自动替用户承担风
 
 - [WorkBuddy 权限、安全与企业治理](README.md)
 - [WorkBuddy 两个权限模式](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Permission-Modes)
-- [WorkBuddy 数据管理](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Data-Management)
+- [WorkBuddy 数据管理](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Data)
 - [WorkBuddy 结果查看](https://www.codebuddy.cn/docs/workbuddy/Results)
 - [WorkBuddy Security Checklist](../templates/security-checklist.md)
 - [Skill Evaluation Template](../templates/skill-evaluation-template.md)

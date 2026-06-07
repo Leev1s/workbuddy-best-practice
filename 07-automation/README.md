@@ -66,7 +66,7 @@ Automation 的关键是“可重复”和“可检查”。一个好自动化不
 ## Template or checklist
 
 ```markdown
-# Automation Design
+## Automation Design Example
 
 - 自动化名称：
 - 业务目标：
